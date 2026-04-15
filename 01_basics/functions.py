@@ -17,3 +17,18 @@ def palindrome(st):
         print("palindrome")
     else:
         print("not palindrome")
+
+def is_print():
+    print("hello nisha")
+is_msg = is_print()
+print(is_msg)
+
+def is_return():
+    return "hello gurlll"
+is_msg2 = is_return()
+print(is_msg2)
+
+def login():
+    pass    # if you dont have anything to write leave as pass
+
+
