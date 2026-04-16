@@ -1,11 +1,11 @@
 import time
 
-input("Press Enter to START stopwatch...")
+input("start time..")
 start = time.time()
 
-input("Press Enter to STOP stopwatch...")
+input("end time...")
 end = time.time()
 
-elapsed = end - start
+elapsedTime = end - start
 
-print("Elapsed Time:", elapsed, "seconds")
+print("Elapsed Time:", elapsedTime, "seconds")
