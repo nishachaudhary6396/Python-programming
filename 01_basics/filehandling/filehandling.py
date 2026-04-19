@@ -3,27 +3,27 @@
 
 
 # Read from a file
-file = open('example.txt', 'r')
+file = open('01_basics/filehandling/example.txt', 'r')
 content = file.read()
 print(content)
 file.close()
 
 # readng one line at a time
 
-file = open('example.txt','r')
+file = open('01_basics/filehandling/example.txt','r')
 line = file.readline()
 print(line)
 file.close()
 
 # write to a file
-file = open('example.txt2','w')
-file.write("\nThis is a new added line")
+file = open('01_basics/filehandling/example.txt2','w')
+file.write("\nThis is the example of write")
 file.close()
 
 
 #append to a file
-file = open('example.txt','a')
-file.write("\nThis is a new append line")
+file = open('01_basics/filehandling/example.txt2','a')
+file.write("\nthis is the example of append")
 file.close()
 
 
