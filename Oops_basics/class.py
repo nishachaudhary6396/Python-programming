@@ -21,4 +21,13 @@ class person:
 
 p1 = person("Nisha", 22)
 p1.greet()
+
+# without __init__() 
+# class human:
+#   pass
+# p1 = human()
+# p1.name = "Nisha"
+# p1.age = 22
+# print(p1.name)
+# print(p1.age)
     
