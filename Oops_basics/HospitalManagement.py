@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod 
-class hospital(ABC):
-    @abstractmethod
+class hospital(ABC):      #abstraction
+    @abstractmethod        
     def get_role(self):
         pass
 class person:
@@ -9,7 +9,7 @@ class person:
         self.age = age
     def display_details(self):
         print(self.name,self.age)
-class doctor(person,hospital):
+class doctor(person,hospital):        #inheritance
     def __init__(self,name,age,attributes):
         super().__init__(name,age)
         self.attributes = attributes
@@ -21,17 +21,18 @@ class doctor(person,hospital):
 class patient(person,hospital):
     def __init__(self,name,age,disease):
         super().__init__(name,age)
-        self.__disease = disease
+        self.__disease = disease    
     def display_details(self):
-        print(f"name:{self.name},Age:{self.age}, Disease:{self.__disease}")
+        print(f"name :{self.name},Age :{self.age}, Disease :{self.__disease}")
 
     def get_role(self):
         print("I m pateint")
+    @property
+    def get_disease(self):   #getter       
+        return self.__disease
     
-    def get_disease(self):   #getter
-        return self._disease
-    
-    def set_disease(self,new_disease):
+    @get_disease.setter
+    def set_disease(self,new_disease):    #setter
         self._disease = new_disease
         
 
