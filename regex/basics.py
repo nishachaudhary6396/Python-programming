@@ -15,7 +15,7 @@ print(j.group())
 text3 = "cat cot cut"
 print(re.findall("c.t", text3))
 
-print(re.findall("^Hello","Hello Nisha what are you doing??"))
+print(re.findall("^Hello","Nisha what are you doing??"))
 
 print(re.findall("world$", "Hello world"))
 
