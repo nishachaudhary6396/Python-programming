@@ -35,3 +35,5 @@ print(re.findall(r"\d+", "abc123555555xyz45abb1"))  # it group the number togeth
 print(re.findall(r"\w", "hi_123ijkl"))   # check all digit,letter , _
 
 print(re.findall(r"\s", "hi nisha "))   # check space
+
+print(re.findall(r".","Nisha"))
