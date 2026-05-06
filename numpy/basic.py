@@ -2,7 +2,7 @@ import numpy as np
 print(np.__version__)
 
 arr = np.array([1,2,3,4,5])
-print(arr)
+print("1 D array")
 
 print(type(arr))
 
@@ -12,8 +12,12 @@ print(arr)
 
 #2D array
 arr2 = np.array([[1,2,3],[4,5,6]])
-print(arr2)
+print("2D array: ",arr2)
 
+
+# creating array from the scratch
+zeros = np.zeros((3,4))
+print("zeros array: \n", zeros)
 
 # check dimensions of the array by ndim...it tells you the how many dimensions we have
 a = np.array(42)
