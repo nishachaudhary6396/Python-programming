@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np   #numpy is used for numerical operations
 import time
 
 py_list = [1,2,3]
