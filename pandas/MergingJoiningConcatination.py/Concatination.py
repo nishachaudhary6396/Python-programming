@@ -1,4 +1,4 @@
-#Concatination of two dataframe
+#Concatination of two dataframe  ..it uses Stacking 
 import pandas as pd
 import numpy as np
 

@@ -1,3 +1,5 @@
+#join using index wise
+
 import numpy as np
 import pandas as pd
 

@@ -1,3 +1,5 @@
+# Aggregation->
+
 import numpy as np
 import pandas as pd
 
@@ -9,8 +11,6 @@ data = {
     'Date': pd.date_range('2023-01-01', periods=8)
 }
 df = pd.DataFrame(data)
-cat=df.groupby('Category')
-for i , v in cat:
-    print(i)
-    print(v)
-# print(df)
+print(df['Sales'].mean())
+
+print(df['Sales'].agg(['mean','sum','min','max']))
